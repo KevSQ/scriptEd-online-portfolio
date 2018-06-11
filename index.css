@@ -1,0 +1,164 @@
+:root {
+	--mainText: #F40000;
+	--secondaryText: #52414C;
+}
+
+body {
+	margin: 0;
+	background: #f7f6ef !important;
+	background-size: 100vw 120vh;
+	overflow-x: hidden;
+	animation: fadeIn 1s, moveInto 2s;
+}
+.hello {
+	margin-top: 7%;
+	text-align: center;
+	font-size: 150px;
+	font-weight: bold;
+	font-family: 'Monsterrat', sans-serif;
+	letter-spacing: 10px;
+
+	transition: all 3s ease-in;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigator {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	margin: 0px;
+	font-size: 24px;
+	padding: 0;
+}
+
+	 .navigator > .navItem {
+		display: inline;
+		margin-right: 30px;
+	}
+	.navigator .logo {
+		margin-right: 38.5%;
+		width: 100px;
+		height: 100px;
+	}
+
+.social {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 60px;
+	width: 32px;
+	height: 32px;
+}
+
+#landing {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.github {
+	width: 70px;
+	background-color: red;
+    border: 2px solid #F40000;
+    overflow: hidden;
+    outline:none;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center !important;
+    text-decoration: none !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+
+}
+
+.github:hover {
+color: white;
+}
+
+.bodytext {
+	font-size: 24px;
+	margin-bottom: 20px !important;
+	color: var(--secondaryText);
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.link {
+	text-decoration: none;
+	color: #766766;
+}
+
+.bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.red {
+	margin-top: 10%;
+	width: 101.1vw;
+	height: 93vh;
+	background-color: red;
+	animation: 1s side 2s;
+}
+
+.deepRed {
+	width: 101.1vw;
+	height: 93vh;
+	background-color: #8B0000;
+	animation: 1s side 2s;
+}
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@keyframes moveInto {
+	from { margin-top: 300px; }
+	to   { margin-top: 0px; } 
+}
+
+
+.blackRed {
+	width: 101.1vw;
+	height: 93vh;
+	background-color: rgb(60, 0, 0);
+	animation: 2s side 2s;
+}
+.translateLeft {
+	margin-left: 10%;
+	margin-top: 10%;
+	color: white;
+}
+.translateRight {
+	float: right;
+	margin-top: 10%;
+	margin-left: 10%;
+	color: white;
+}
+.wip .complete {
+	display: inline;
+}
+
+.wip {
+	color: red;
+/*	border: 1px solid black;*/
+	padding-left: 3px;
+	padding-right: 3px;
+	font-size: 20px;
+	border-radius: 15px;
+	background-color: #8B0000;
+}
+
+.complete {
+	color: green;
+/*	border: 1px solid black;*/
+	padding-left: 3px;
+	padding-right: 3px;
+	font-size: 20px;
+	border-radius: 15px;
+	background-color: #006400;
+}
